@@ -1,0 +1,149 @@
+/////////////////////////   Java - OOP ////////////////////////////////////////////////////////
+
+//////////////////////// 19 / 07 / 2022 //////////////////////////////////////////////////////
+
+class Main{
+	
+	public static void main (String args[]){
+		Calculater cal = new Calculater();
+		System.out.println(cal.sum(10,20));
+		System.out.println(cal.sub(10,20));
+		System.out.println(cal.mult(10,20));
+		System.out.println(cal.div(100,20));
+	}
+}
+
+class Calculater{
+	
+	public int sum(int x, int y){
+		return x+y;
+	}
+	
+	public int sub (int x, int y){
+		return x-y;
+	}
+	
+	public int mult(int x, int y){
+		return x*y;
+	}
+	
+	public double div(double x, double y){
+		return x/y;
+	}
+}
+
+*********************************************************************************************************
+import java.util.Scanner;
+
+
+class Main{
+	
+	public static void main (String args[]){
+		
+		Scanner input  =  new Scanner(System.in);
+
+		System.out.print("Enter Number :");
+		int x = input.nextInt();
+
+		System.out.print("Enter Number :");
+		int y = input.nextInt();
+
+		Calculater cal = new Calculater();
+		System.out.println(cal.sum(x,y));
+		System.out.println(cal.sub(x,y));
+		System.out.println(cal.mult(x,y));
+		System.out.println(cal.div((double)x,(double)y)); 
+	}
+}
+
+class Calculater{
+	
+	public int sum(int x, int y){
+		return x+y;
+	}
+	
+	public int sub (int x, int y){
+		return x-y;
+	}
+	
+	public int mult(int x, int y){
+		return x*y;
+	}
+	
+	public double div(double x, double y){
+		return x/y;
+	}
+}
+*********************************************************************************************************
+import java.util.Scanner;
+
+
+class Main{
+	
+	public static void main (String args[]){
+		
+		Scanner input  =  new Scanner(System.in);
+		
+		System.out.print("Enter Number :");
+		int x = input.nextInt();
+		
+		if(x % 2 == 0){
+			System.out.println(x + " is Even Number.");
+		}else{
+			System.out.println(x + " is Odd Number.");
+		}
+	}
+}
+
+*********************************************************************************************************
+import java.util.Scanner;
+
+
+class Main{
+	
+	public static void main (String args[]){
+		
+		Scanner input  =  new Scanner(System.in);
+		
+		System.out.print("Enter Number :");
+		int x = input.nextInt();
+		
+		System.out.println(isEven(x) ? x+" is even number.": x+" is odd number.");
+		
+	}
+	
+	public static boolean isEven(int x){
+		if(x % 2 == 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+
+*********************************************************************************************************
+import java.util.Scanner;
+
+
+class Main{
+	
+	public static void main (String args[]){
+		System.out.println(findFact(5));
+	}
+	
+	public static int findFact(int num){
+		int fact =1;
+		for(int i=num; i> 0; i--){
+			fact*= i;
+		}
+		return fact;
+	}
+	
+}
+
+*********************************************************************************************************
+*********************************************************************************************************
+*********************************************************************************************************
+*********************************************************************************************************
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
